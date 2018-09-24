@@ -31,6 +31,23 @@ Instead, the cell outputs used in the talk are persisted as HTML files in the [`
 Through their Machine Learning nature, all experiments feature randomness, therefore rerunning them will not yield identical results, only similar ones.
 The [`regenerate.sh`](regenerate.sh)-script can be used to clean the notebooks before committing as well as to rerun them and persist results into the `output`-folder.
 
+### Dependencies
+
+All dependencies required to run the code locally are specified in the [`Pipfile`](Pipfile).
+To be placed in a virtual environment satisfying these dependencies, install [Pipenv](https://docs.pipenv.org) and run:
+
+```sh
+pipenv install --skip-lock
+pipenv shell
+```
+
+Alternatively, you can use Docker:
+
+```sh
+docker build -t talk-supervised-learning-tensorflow .
+docker run -it talk-supervised-learning-tensorflow
+```
+
 ## License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
