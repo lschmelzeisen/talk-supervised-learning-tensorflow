@@ -48,6 +48,10 @@ docker build -t talk-supervised-learning-tensorflow .
 docker run -it talk-supervised-learning-tensorflow
 ```
 
+## Acknowledgements
+
+I thank [René Pickardt](https://www.rene-pickhardt.de/) for extensive feedback on early versions of the experiments.
+
 ## License
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
